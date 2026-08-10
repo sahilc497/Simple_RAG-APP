@@ -426,17 +426,7 @@ generator = pipeline(
 Create the prompt:
 
 ```python
-prompt = f"""
-Answer the question using only the provided context.
-
-Context:
-{context}
-
-Question:
-{question}
-
-Answer:
-"""
+prompt = f"Answer the question: {question} based on the following context: {context}"
 ```
 
 Generate:
